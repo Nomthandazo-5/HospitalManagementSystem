@@ -33,7 +33,6 @@ This application provides a straightforward system to manage hospital operations
 ### User Experience
 - Interactive menu system with clear options
 - Input validation with helpful error messages
-- Emoji indicators for better visual feedback (✅ ❌ 👋)
 - Empty state messaging when no records exist
 - Try-with-resources for safe resource management
 
