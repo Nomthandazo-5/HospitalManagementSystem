@@ -43,10 +43,10 @@ public class HospitalManagementSystem {
                     case 6 -> updatePatientDiagnosis(sc);
                     case 7 -> searchPatient(sc);
                     case 8 -> viewDoctorDetails(sc);
-                    case 9 -> System.out.println("Exiting... 👋");
+                    case 9 -> System.out.println("Exiting... ");
                     default -> System.out.println("Invalid choice! Try again.");
                 }
-            } while (choice != 8);
+            } while (choice != 9);
         }
     }
 
@@ -69,7 +69,7 @@ public class HospitalManagementSystem {
         }
 
         patients.add(new Patient(name, age));
-        System.out.println("✅ Patient added successfully!");
+        System.out.println(" Patient added successfully!");
     }
 
     private static void addDoctor(Scanner sc) {
@@ -85,7 +85,7 @@ public class HospitalManagementSystem {
         if (spec.isEmpty()) spec = "General";
 
         doctors.add(new Doctor(name, spec));
-        System.out.println("✅ Doctor added successfully!");
+        System.out.println(" Doctor added successfully!");
     }
 
     private static void viewPatients() {
@@ -178,9 +178,9 @@ public class HospitalManagementSystem {
 
         if (patient != null && doctor != null) {
             doctor.assignPatient(patient);
-            System.out.println("✅ Patient assigned successfully!");
+            System.out.println(" Patient assigned successfully!");
         } else {
-            System.out.println("❌ Invalid patient or doctor ID!");
+            System.out.println(" Invalid patient or doctor ID!");
         }
     }
 
@@ -206,9 +206,9 @@ public class HospitalManagementSystem {
             System.out.print("Enter new diagnosis: ");
             String diagnosis = sc.nextLine();
             patient.setDiagnosis(diagnosis);
-            System.out.println("✅ Diagnosis updated successfully!");
+            System.out.println(" Diagnosis updated successfully!");
         } else {
-            System.out.println("❌ Patient not found!");
+            System.out.println(" Patient not found!");
         }
     }
 
@@ -247,4 +247,5 @@ public class HospitalManagementSystem {
                 .findFirst()
                 .orElse(null);
     }
+
 }
