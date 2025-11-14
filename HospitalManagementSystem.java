@@ -9,7 +9,7 @@ public class HospitalManagementSystem {
     private static final ArrayList<Doctor> doctors = new ArrayList<>();
 
     public static void main(String[] args) {
-        System.out.println("🏥 Welcome to Hospital Management System");
+        System.out.println(" Welcome to Hospital Management System");
 
         try (Scanner sc = new Scanner(System.in)) {
             int choice;
@@ -249,3 +249,4 @@ public class HospitalManagementSystem {
     }
 
 }
+
